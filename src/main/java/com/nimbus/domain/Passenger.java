@@ -9,7 +9,7 @@ public class Passenger {
     private String lastname;
     private String email;
     private String passportId;
-    private String phone;
+    private String phonenumber;
 
     public String getFirstname() {
         return firstname;
@@ -43,11 +43,11 @@ public class Passenger {
         this.passportId = passportId;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getPhonenumber() {
+        return phonenumber;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPhonenumber(String phonenumber) {
+        this.phonenumber = phonenumber;
     }
 }
