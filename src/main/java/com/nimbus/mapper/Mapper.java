@@ -12,12 +12,21 @@ import ma.glasnost.orika.impl.ConfigurableMapper;
  */
 public class Mapper extends ConfigurableMapper {
 
+
     @Override
     protected void configure(MapperFactory factory) {
 
-        factory.classMap(Passenger.class, PassengerEntity.class).field("phonenumber", "phone").byDefault().register();
+        factory.classMap(Passenger.class, PassengerEntity.class)
+                .field("phonenumber", "phone")
+                .byDefault()
+                .register();
 
-        factory.classMap(Journey.class, JourneyEntity.class).field("passengers", "passengerEntities").byDefault().register();
 
+        factory.classMap(Journey.class, JourneyEntity.class)
+                .field("passengers", "passengerEntities")
+                .byDefault()
+                .register();
     }
+
+
 }
